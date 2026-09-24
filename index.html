@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AccessAGI Global Translation Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AccessAGI Global Translation Hub</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; }
+  .tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+  .tab { padding: 10px 15px; background: #eee; border-radius: 5px; cursor: pointer; }
+  .tab.active { background: #0078ff; color: white; }
+  .content { display: none; }
+  .content.active { display: block; }
+</style>
+<script>
+function showTab(lang) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+  document.getElementById('tab-' + lang).classList.add('active');
+  document.getElementById('content-' + lang).classList.add('active');
+}
+</script>
 </head>
+
 <body>
-  <h1>AccessAGI Global Translation Page</h1>
+
+<h1>AccessAGI Global Translation Hub</h1>
+<p>Select a language below to view the translated content.</p>
+
+<div class="tabs">
+  <div id="tab-en" class="tab active" onclick="showTab('en')">English</div>
+  <div id="tab-zh" class="tab" onclick="showTab('zh')">中文</div>
+  <div id="tab-es" class="tab" onclick="showTab('es')">Español</div>
+  <div id="tab-fr" class="tab" onclick="showTab('fr')">Français</div>
+  <div id="tab-de" class="tab" onclick="showTab('de')">Deutsch</div>
+  <div id="tab-pt" class="tab" onclick="showTab('pt')">Português</div>
+  <div id="tab-ja" class="tab" onclick="showTab('ja')">日本語</div>
+  <div id="tab-ko" class="tab" onclick="showTab('ko')">한국어</div>
+  <div id="tab-it" class="tab" onclick="showTab('it')">Italiano</div>
+</div>
+
+<!-- English -->
+<div id="content-en" class="content active">
+  <h2>English</h2>
   <p>This is the official translation hub for the XPM and ExP series.</p>
-</body>
-</html>
+</div>
+
+<!-- Chinese -->
+<div id="content-zh" class="content">
+  <h2>中文</h2>
+  <p>这是 XPM 和 ExP 系列的官方翻译中心。</p>
+</div>
+
+<!-- Spanish -->
+<div id="content-es" class="content">
+  <h2>Español</h2>
+  <p>Este es el centro oficial de traducción para las series XPM y ExP.</p>
+</div>
+
+<!-- French -->
+<div id="content-fr" class="content">
+  <h2>Français</h2>
+  <p>Ceci est le centre officiel de traduction pour les séries XPM et ExP.</p>
+</div>
+
+<!-- German -->
+<div id="content-de" class="content">
+  <h2>Deutsch</h2>
+  <p>Dies ist das offizielle Übersetzungszentrum für die XPM- und ExP-Serien.</p>
+</div>
+
+<!-- Portuguese -->
+<div id="content-pt" class="content">
+  <h2>Português</h2>
+  <p>Este é o centro oficial de tradução das séries XPM e ExP.</p>
+</div>
+
+<!-- Japanese -->
+<div id="content-ja" class="content">
+  <h2>日本語</h2>
+  <p>これは XPM と ExP シリーズの公式翻訳ハブです。</p>
+</div>
+
+<!-- Korean -->
+<div id="content-ko" class="content">
+  <h2>한국어</h2>
+  <p>이곳은 XPM 및 ExP 시리즈의 공식 번역 허브입니다.</p>
+</div>
+
+<!-- Italian -->
+<div id="content-it" class="content">
+  <h2>Italiano</h2>
+  <p>Questo è il centro ufficiale di traduzione per le serie XPM ed ExP.</p>
