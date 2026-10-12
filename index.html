@@ -2,305 +2,165 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AccessAGI Global Translation Hub</title>
+<title>AccessAGI Global XPM Translation</title>
+
 <style>
-  body { font-family: Arial, sans-serif; margin: 40px; }
-  .tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
-  .tab { padding: 10px 15px; background: #eee; border-radius: 5px; cursor: pointer; }
-  .tab.active { background: #0078ff; color: white; }
-  .content { display: none; }
-  .content.active { display: block; }
-</style>
-<script>
-function showTab(lang) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
-  document.getElementById('tab-' + lang).classList.add('active');
-  document.getElementById('content-' + lang).classList.add('active');
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
 }
-</script>
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px;
+  margin: 5px;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #ccc;
+}
+
+.content {
+  display: none;
+  margin-top: 20px;
+}
+</style>
+
 </head>
-
 <body>
-<img src="9-11-26 Final Blue Heron Image for LI article.png" alt="Blue Heron" style="width:100%; max-width:900px; margin-bottom:30px;">
-<h1>AccessAGI Global Translation Hub</h1>
-<!-- English Header Section -->
-<h2>English</h2>
 
-<p><strong>BH Intro:</strong><br>
-Blue Heron offers a simple greeting: believing that access to technology, shared worldwide, can make life easier for all.
-</p>
-
-<p><strong>AccessAGI Anchor Paragraph:</strong><br>
-Today marks the first global step in a responsibility every nation shares — ensuring that advanced capability is accessible, understandable, and beneficial to all people. AccessAGI exists to make technology feel human again: clear, calm, and supportive, no matter where someone lives or what language they speak. Our mission is simple — to bring the world forward together, with tools that strengthen communities, empower individuals, and open the door to a safer, more capable future.
-</p>
-
-<p><strong>MACH Definition:</strong><br>
-MACH = Mobile Advanced Capability Hub — a mobile, modular platform that carries whatever capability a nation needs.
-</p>
-
-<hr>
-
-<p>Select a language below to view the translated content.</p>
+<h1>AccessAGI Global XPM Translation</h1>
 
 <div class="tabs">
-  <div id="tab-en" class="tab active" onclick="showTab('en')">English</div>
-  <div id="tab-zh" class="tab" onclick="showTab('zh')">中文</div>
-  <div id="tab-es" class="tab" onclick="showTab('es')">Español</div>
-  <div id="tab-fr" class="tab" onclick="showTab('fr')">Français</div>
-  <div id="tab-de" class="tab" onclick="showTab('de')">Deutsch</div>
-  <div id="tab-pt" class="tab" onclick="showTab('pt')">Português</div>
-  <div id="tab-ja" class="tab" onclick="showTab('ja')">日本語</div>
-  <div id="tab-ko" class="tab" onclick="showTab('ko')">한국어</div>
-  <div id="tab-it" class="tab" onclick="showTab('it')">Italiano</div>
-<div id="tab-ru" class="tab" onclick="showTab('ru')">Русский</div>
-<div id="tab-tr" class="tab" onclick="showTab('tr')">Türkçe</div>
-<div id="tab-vi" class="tab" onclick="showTab('vi')">Tiếng Việt</div>
-<div id="tab-id" class="tab" onclick="showTab('id')">Bahasa Indonesia</div>
-<div id="tab-th" class="tab" onclick="showTab('th')">ไทย</div>
-<div id="tab-uk" class="tab" onclick="showTab('uk')">Українська</div>
-<div id="tab-pl" class="tab" onclick="showTab('pl')">Polski</div>
-<div id="tab-sw" class="tab" onclick="showTab('sw')">Kiswahili</div>
-<div id="tab-ja2" class="tab" onclick="showTab('ja2')">日本語 (existing, refreshed)</div>
-<div id="tab-ko2" class="tab" onclick="showTab('ko2')">한국어 (existing, refreshed)</div>
+  <div class="tab" id="tab-english" onclick="showTab('english')">English</div>
+  <div class="tab" id="tab-swahili" onclick="showTab('swahili')">Swahili</div>
+  <div class="tab" id="tab-french" onclick="showTab('french')">French</div>
+  <div class="tab" id="tab-spanish" onclick="showTab('spanish')">Spanish</div>
+  <div class="tab" id="tab-german" onclick="showTab('german')">German</div>
+  <div class="tab" id="tab-arabic" onclick="showTab('arabic')">Arabic</div>
+  <div class="tab" id="tab-hindi" onclick="showTab('hindi')">Hindi</div>
+  <div class="tab" id="tab-chinese" onclick="showTab('chinese')">Chinese</div>
+  <div class="tab" id="tab-japanese" onclick="showTab('japanese')">Japanese</div>
+  <div class="tab" id="tab-portuguese" onclick="showTab('portuguese')">Portuguese</div>
+  <div class="tab" id="tab-russian" onclick="showTab('russian')">Russian</div>
+  <div class="tab" id="tab-italian" onclick="showTab('italian')">Italian</div>
+  <div class="tab" id="tab-korean" onclick="showTab('korean')">Korean</div>
+  <div class="tab" id="tab-dutch" onclick="showTab('dutch')">Dutch</div>
+  <div class="tab" id="tab-somali" onclick="showTab('somali')">Somali</div>
+  <div class="tab" id="tab-yoruba" onclick="showTab('yoruba')">Yoruba</div>
+  <div class="tab" id="tab-zulu" onclick="showTab('zulu')">Zulu</div>
 </div>
 
-<!-- English Tab -->
-<div id="content-en" class="content active">
+<!-- ENGLISH -->
+<div class="content" id="content-english">
   <h2>English</h2>
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron offers a simple greeting: believing that access to technology, shared worldwide, can make life easier for all.</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  Today marks the first global step in a responsibility every nation shares — ensuring that advanced capability is accessible, understandable, and beneficial to all people. AccessAGI exists to make technology feel human again: clear, calm, and supportive, no matter where someone lives or what language they speak. Our mission is simple — to bring the world forward together, with tools that strengthen communities, empower individuals, and open the door to a safer, more capable future.</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — a mobile, modular platform that carries whatever capability a nation needs.</p>
+  <p>[Your English text goes here]</p>
 </div>
 
-<!-- Chinese -->
-<div id="content-zh" class="content">
-  <h2>中文</h2>
-  <p><strong>BH 简介：</strong><br>
-  蓝鹭以简单的问候出现：相信技术的全球共享能够让所有人的生活变得更轻松。</p>
-
-  <p><strong>AccessAGI 核心段落：</strong><br>
-  今天标志着各国共同承担的一项全球责任的第一步——确保先进能力能够为所有人所获取、理解并带来益处。AccessAGI 的存在是为了让技术重新变得有人性：清晰、平稳、支持，无论人们身处何地、使用何种语言。我们的使命很简单——共同推动世界前进，提供能够增强社区、赋能个人并开启更安全、更有能力的未来的工具。</p>
-
-  <p><strong>MACH 定义：</strong><br>
-  MACH = 机动先进能力中心——一种可移动、模块化的平台，可携带一个国家所需的任何能力。</p>
+<!-- SWAHILI -->
+<div class="content" id="content-swahili">
+  <h2>Swahili</h2>
+  <p>[Your Swahili translation goes here]</p>
 </div>
 
-<!-- Spanish -->
-<div id="content-es" class="content">
-  <h2>Español</h2>
-  <p><strong>Introducción de BH:</strong><br>
-  Blue Heron ofrece un saludo sencillo: creyendo que el acceso a la tecnología, compartido mundialmente, puede hacer la vida más fácil para todos.</p>
-
-  <p><strong>Párrafo central de AccessAGI:</strong><br>
-  Hoy marca el primer paso global en una responsabilidad que todas las naciones comparten: garantizar que la capacidad avanzada sea accesible, comprensible y beneficiosa para todas las personas. AccessAGI existe para que la tecnología vuelva a sentirse humana: clara, tranquila y de apoyo, sin importar dónde viva alguien o qué idioma hable. Nuestra misión es simple: avanzar juntos, con herramientas que fortalezcan comunidades, empoderen a las personas y abran la puerta a un futuro más seguro y capaz.</p>
-
-  <p><strong>Definición de MACH:</strong><br>
-  MACH = Centro Móvil de Capacidades Avanzadas — una plataforma móvil y modular que transporta cualquier capacidad que una nación necesite.</p>
+<!-- FRENCH -->
+<div class="content" id="content-french">
+  <h2>French</h2>
+  <p>[Your French translation goes here]</p>
 </div>
 
-<!-- French -->
-<div id="content-fr" class="content">
-  <h2>Français</h2>
-  <p><strong>Introduction BH :</strong><br>
-  Blue Heron offre un salut simple : croyant que l’accès à la technologie, partagé dans le monde entier, peut rendre la vie plus facile pour tous.</p>
-
-  <p><strong>Paragraphe AccessAGI :</strong><br>
-  Aujourd’hui marque la première étape mondiale d’une responsabilité partagée par toutes les nations : garantir que les capacités avancées soient accessibles, compréhensibles et bénéfiques pour tous. AccessAGI existe pour rendre la technologie plus humaine : claire, calme et solidaire, peu importe où quelqu’un vit ou quelle langue il parle. Notre mission est simple : faire avancer le monde ensemble, avec des outils qui renforcent les communautés, autonomisent les individus et ouvrent la porte à un avenir plus sûr et plus capable.</p>
-
-  <p><strong>Définition de MACH :</strong><br>
-  MACH = Centre Mobile de Capacités Avancées — une plateforme mobile et modulaire qui transporte les capacités dont une nation a besoin.</p>
+<!-- SPANISH -->
+<div class="content" id="content-spanish">
+  <h2>Spanish</h2>
+  <p>[Your Spanish translation goes here]</p>
 </div>
 
-<!-- German -->
-<div id="content-de" class="content">
-  <h2>Deutsch</h2>
-  <p><strong>BH Einführung:</strong><br>
-  Blue Heron bietet einen einfachen Gruß: in dem Glauben, dass der weltweite Zugang zu Technologie das Leben für alle erleichtern kann.</p>
-
-  <p><strong>AccessAGI Kernabsatz:</strong><br>
-  Heute markiert den ersten globalen Schritt in einer Verantwortung, die alle Nationen teilen – sicherzustellen, dass fortschrittliche Fähigkeiten für alle Menschen zugänglich, verständlich und vorteilhaft sind. AccessAGI existiert, um Technologie wieder menschlich zu machen: klar, ruhig und unterstützend, unabhängig davon, wo jemand lebt oder welche Sprache er spricht. Unsere Mission ist einfach – die Welt gemeinsam voranzubringen, mit Werkzeugen, die Gemeinschaften stärken, Individuen befähigen und den Weg zu einer sichereren und fähigeren Zukunft öffnen.</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobiles Zentrum für Erweiterte Fähigkeiten — eine mobile, modulare Plattform, die jede Fähigkeit tragen kann, die eine Nation benötigt.</p>
+<!-- GERMAN -->
+<div class="content" id="content-german">
+  <h2>German</h2>
+  <p>[Your German translation goes here]</p>
 </div>
 
-<!-- Portuguese -->
-<div id="content-pt" class="content">
-  <h2>Português</h2>
-  <p><strong>Introdução BH:</strong><br>
-  Blue Heron oferece uma saudação simples: acreditando que o acesso à tecnologia, compartilhado mundialmente, pode tornar a vida mais fácil para todos.</p>
-
-  <p><strong>Parágrafo AccessAGI:</strong><br>
-  Hoje marca o primeiro passo global em uma responsabilidade compartilhada por todas as nações — garantir que capacidades avançadas sejam acessíveis, compreensíveis e benéficas para todas as pessoas. AccessAGI existe para tornar a tecnologia humana novamente: clara, calma e solidária, independentemente de onde alguém viva ou qual idioma fale. Nossa missão é simples — avançar juntos, com ferramentas que fortalecem comunidades, capacitam indivíduos e abrem a porta para um futuro mais seguro e capaz.</p>
-
-  <p><strong>Definição MACH:</strong><br>
-  MACH = Centro Móvel de Capacidades Avançadas — uma plataforma móvel e modular que transporta qualquer capacidade que uma nação necessite.</p>
+<!-- ARABIC -->
+<div class="content" id="content-arabic">
+  <h2>Arabic</h2>
+  <p>[Your Arabic translation goes here]</p>
 </div>
 
-<!-- Japanese (Refreshed) -->
-<div id="content-ja2" class="content">
-  <h2>日本語（更新版）</h2>
-
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron はシンプルな挨拶を届けます。世界中で共有される技術へのアクセスが、すべての人の生活をより楽にできると信じています。</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  今日は、すべての国が共有する責任における最初の世界的な一歩を示しています — 先進的な能力が、誰にとってもアクセスしやすく、理解しやすく、役立つものであることを保証するためです。AccessAGI は、技術を再び人間らしく感じられるものにするために存在します。どこに住んでいても、どの言語を話していても、明確で、落ち着いていて、支援的であること。私たちの使命はシンプルです — コミュニティを強化し、個人を支え、より安全で能力の高い未来への扉を開くツールとともに、世界を共に前進させることです。</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — 国が必要とするあらゆる能力を運ぶ、モバイル型モジュール式プラットフォームです。</p>
+<!-- HINDI -->
+<div class="content" id="content-hindi">
+  <h2>Hindi</h2>
+  <p>[Your Hindi translation goes here]</p>
 </div>
 
-<!-- Korean (Refreshed) -->
-<div id="content-ko2" class="content">
-  <h2>한국어 (업데이트)</h2>
-
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron은 간단한 인사를 전합니다. 전 세계가 공유하는 기술 접근성이 모든 사람의 삶을 더 쉽게 만들 수 있다고 믿습니다.</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  오늘은 모든 국가가 함께 책임지는 글로벌 과제의 첫걸음을 의미합니다 — 고급 역량이 모든 사람에게 접근 가능하고, 이해 가능하며, 도움이 되도록 보장하는 것입니다. AccessAGI는 기술이 다시 인간적으로 느껴지도록 존재합니다: 명확하고, 차분하며, 어디에 살든 어떤 언어를 사용하든 사람들을 지원합니다. 우리의 사명은 단순합니다 — 공동체를 강화하고 개인을 지원하며, 더 안전하고 더 유능한 미래로 이어지는 문을 여는 도구와 함께 세계를 함께 앞으로 나아가게 하는 것입니다.</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — 국가가 필요로 하는 모든 역량을 운반하는 모바일 모듈형 플랫폼입니다.</p>
+<!-- CHINESE -->
+<div class="content" id="content-chinese">
+  <h2>Chinese</h2>
+  <p>[Your Chinese translation goes here]</p>
 </div>
 
-<!-- Italian -->
-<div id="content-it" class="content">
-  <h2>Italiano</h2>
-  <p><strong>Introduzione BH:</strong><br>
-  Blue Heron offre un saluto semplice: credendo che l’accesso alla tecnologia, condiviso in tutto il mondo, possa rendere la vita più facile per tutti.</p>
-
-  <p><strong>Paragrafo AccessAGI:</strong><br>
-  Oggi segna il primo passo globale in una responsabilità condivisa da tutte le nazioni — garantire che le capacità avanzate siano accessibili, comprensibili e utili a tutte le persone. AccessAGI esiste per rendere la tecnologia di nuovo umana: chiara, calma e di supporto, indipendentemente da dove viva una persona o da quale lingua parli. La nostra missione è semplice — far avanzare il mondo insieme, con strumenti che rafforzano le comunità, responsabilizzano gli individui e aprono la porta a un futuro più sicuro e capace.</p>
-
-  <p><strong>Definizione MACH:</strong><br>
-  MACH = Centro Mobile di Capacità Avanzate — una piattaforma mobile e modulare che trasporta qualsiasi capacità necessaria a una nazione.</p>
+<!-- JAPANESE -->
+<div class="content" id="content-japanese">
+  <h2>Japanese</h2>
+  <p>[Your Japanese translation goes here]</p>
 </div>
-<!-- Russian -->
-<div id="content-ru" class="content">
-  <h2>Русский</h2>
 
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron передаёт простое приветствие: вера в то, что доступ к технологиям, разделённым по всему миру, может сделать жизнь легче для всех.</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  Сегодня отмечает первый глобальный шаг в ответственности, которую разделяют все страны — обеспечить, чтобы передовые возможности были доступными, понятными и полезными для каждого человека. AccessAGI существует для того, чтобы технологии снова ощущались человечными: ясными, спокойными и поддерживающими, независимо от того, где живёт человек и на каком языке говорит. Наша миссия проста — продвигать мир вперёд вместе, предоставляя инструменты, которые укрепляют сообщества, расширяют возможности людей и открывают дверь в более безопасное и более способное будущее.</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — мобильная, модульная платформа, которая несёт любые возможности, необходимые стране.</p>
+<!-- PORTUGUESE -->
+<div class="content" id="content-portuguese">
+  <h2>Portuguese</h2>
+  <p>[Your Portuguese translation goes here]</p>
 </div>
-<br>
- <!-- Turkish -->
-<div id="content-tr" class="content">
-  <h2>Türkçe</h2>
 
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron basit bir selam gönderiyor: dünyanın her yerinde paylaşılan teknolojiye erişimin herkesin hayatını kolaylaştırabileceğine inanıyor.</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  Bugün, tüm ülkelerin paylaştığı bir sorumluluğun ilk küresel adımını işaret ediyor — ileri yeteneklerin herkes için erişilebilir, anlaşılır ve faydalı olmasını sağlamak. AccessAGI, teknolojiyi yeniden insancıl hissettirmek için var: nerede yaşarsa yaşasın, hangi dili konuşursa konuşsun, insanlara açık, sakin ve destekleyici bir deneyim sunmak. Misyonumuz basit — toplulukları güçlendiren, bireyleri destekleyen ve daha güvenli, daha yetenekli bir geleceğin kapısını açan araçlarla dünyayı birlikte ileri taşımak.</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — bir ülkenin ihtiyaç duyduğu her türlü yeteneği taşıyan mobil ve modüler bir platform.</p>
+<!-- RUSSIAN -->
+<div class="content" id="content-russian">
+  <h2>Russian</h2>
+  <p>[Your Russian translation goes here]</p>
 </div>
-<br>
-<!-- Vietnamese -->
-<div id="content-vi" class="content">
-  <h2>Tiếng Việt</h2>
 
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron gửi một lời chào đơn giản: tin rằng việc chia sẻ công nghệ trên toàn thế giới có thể giúp cuộc sống của mọi người trở nên dễ dàng hơn.</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  Hôm nay đánh dấu bước đi toàn cầu đầu tiên trong trách nhiệm mà mọi quốc gia cùng chia sẻ — đảm bảo rằng năng lực tiên tiến có thể được tiếp cận, được hiểu và mang lại lợi ích cho tất cả mọi người. AccessAGI tồn tại để khiến công nghệ trở nên nhân văn trở lại: rõ ràng, bình tĩnh và hỗ trợ, bất kể ai sống ở đâu hay nói ngôn ngữ nào. Sứ mệnh của chúng tôi rất đơn giản — đưa thế giới tiến lên cùng nhau, với những công cụ giúp củng cố cộng đồng, trao quyền cho từng cá nhân và mở ra cánh cửa đến một tương lai an toàn và giàu năng lực hơn.</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — một nền tảng di động, mô‑đun mang theo bất kỳ năng lực nào mà một quốc gia cần.</p>
+<!-- ITALIAN -->
+<div class="content" id="content-italian">
+  <h2>Italian</h2>
+  <p>[Your Italian translation goes here]</p>
 </div>
-<br>
 
-<!-- Indonesian -->
-<div id="content-id" class="content">
-  <h2>Bahasa Indonesia</h2>
-
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron menyampaikan salam sederhana: keyakinan bahwa akses terhadap teknologi yang dibagikan ke seluruh dunia dapat membuat hidup menjadi lebih mudah bagi semua orang.</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  Hari ini menandai langkah global pertama dalam tanggung jawab yang dibagi oleh semua negara — memastikan bahwa kemampuan tingkat lanjut dapat diakses, dipahami, dan bermanfaat bagi semua orang. AccessAGI hadir untuk membuat teknologi kembali terasa manusiawi: jelas, tenang, dan mendukung, di mana pun seseorang tinggal atau bahasa apa pun yang mereka gunakan. Misi kami sederhana — membawa dunia maju bersama, dengan alat yang memperkuat komunitas, memberdayakan individu, dan membuka pintu menuju masa depan yang lebih aman dan lebih mampu.</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — platform bergerak dan modular yang membawa kemampuan apa pun yang dibutuhkan suatu negara.</p>
+<!-- KOREAN -->
+<div class="content" id="content-korean">
+  <h2>Korean</h2>
+  <p>[Your Korean translation goes here]</p>
 </div>
-<br>
 
-<!-- Thai -->
-<div id="content-th" class="content">
-  <h2>ไทย</h2>
-
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron ส่งคำทักทายอย่างเรียบง่าย: เชื่อว่าการเข้าถึงเทคโนโลยีที่แบ่งปันกันทั่วโลกสามารถทำให้ชีวิตของทุกคนง่ายขึ้นได้</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  วันนี้เป็นก้าวแรกของความรับผิดชอบระดับโลกที่ทุกประเทศร่วมกันแบกรับ — เพื่อให้ความสามารถขั้นสูงสามารถเข้าถึงได้ เข้าใจได้ และเป็นประโยชน์ต่อทุกคน AccessAGI มีอยู่เพื่อทำให้เทคโนโลยีกลับมารู้สึกเป็นมนุษย์อีกครั้ง: ชัดเจน สงบ และสนับสนุน ไม่ว่าผู้คนจะอยู่ที่ไหนหรือพูดภาษาใด ภารกิจของเรานั้นเรียบง่าย — นำโลกก้าวไปข้างหน้าร่วมกัน ด้วยเครื่องมือที่เสริมสร้างชุมชน เพิ่มพลังให้แต่ละบุคคล และเปิดประตูสู่อนาคตที่ปลอดภัยและมีศักยภาพมากขึ้น</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — แพลตฟอร์มเคลื่อนที่แบบโมดูลาร์ที่สามารถบรรทุกความสามารถใด ๆ ที่ประเทศต้องการ</p>
+<!-- DUTCH -->
+<div class="content" id="content-dutch">
+  <h2>Dutch</h2>
+  <p>[Your Dutch translation goes here]</p>
 </div>
-<br>
 
-<!-- Ukrainian -->
-<div id="content-uk" class="content">
-  <h2>Українська</h2>
-
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron надсилає просте привітання: віру в те, що доступ до технологій, спільних у всьому світі, може зробити життя легшим для всіх.</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  Сьогодні означає перший глобальний крок у відповідальності, яку поділяють усі країни — забезпечити, щоб передові можливості були доступними, зрозумілими та корисними для кожної людини. AccessAGI існує для того, щоб технології знову відчувалися людяними: зрозумілими, спокійними та підтримуючими, незалежно від того, де живе людина і якою мовою говорить. Наша місія проста — рухати світ уперед разом, використовуючи інструменти, що зміцнюють громади, розширюють можливості людей і відкривають двері до безпечнішого та більш спроможного майбутнього.</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — мобільна, модульна платформа, що переносить будь-які можливості, потрібні країні.</p>
+<!-- SOMALI -->
+<div class="content" id="content-somali">
+  <h2>Somali</h2>
+  <p>[Your Somali translation goes here]</p>
 </div>
-<br>
 
-<!-- Polish -->
-<div id="content-pl" class="content">
-  <h2>Polski</h2>
-
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron przekazuje proste pozdrowienie: wiarę, że dostęp do technologii, dzielonej na całym świecie, może ułatwić życie wszystkim ludziom.</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  Dziś oznacza pierwszy globalny krok we wspólnej odpowiedzialności wszystkich państw — zapewnienie, aby zaawansowane możliwości były dostępne, zrozumiałe i korzystne dla każdego człowieka. AccessAGI istnieje po to, aby technologia znów była ludzka: jasna, spokojna i wspierająca, niezależnie od tego, gdzie ktoś mieszka i jakim językiem mówi. Nasza misja jest prosta — wspólnie prowadzić świat naprzód, dzięki narzędziom wzmacniającym społeczności, wspierającym jednostki i otwierającym drzwi do bezpieczniejszej, bardziej zdolnej przyszłości.</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — mobilna, modułowa platforma, która niesie wszelkie możliwości potrzebne państwu.</p>
+<!-- YORUBA -->
+<div class="content" id="content-yoruba">
+  <h2>Yoruba</h2>
+  <p>[Your Yoruba translation goes here]</p>
 </div>
-<br>
 
-<!-- Swahili -->
-<div id="content-sw" class="content">
-  <h2>Kiswahili</h2>
-
-  <p><strong>BH Intro:</strong><br>
-  Blue Heron hutuma salamu rahisi: imani kwamba upatikanaji wa teknolojia inayoshirikiwa duniani kote unaweza kufanya maisha kuwa rahisi kwa kila mtu.</p>
-
-  <p><strong>AccessAGI Anchor Paragraph:</strong><br>
-  Leo inaashiria hatua ya kwanza ya kimataifa katika jukumu ambalo mataifa yote yanashiriki — kuhakikisha kwamba uwezo wa hali ya juu unapatikana, unaeleweka, na unaleta manufaa kwa watu wote. AccessAGI ipo ili kufanya teknolojia ihisi kuwa ya kibinadamu tena: wazi, tulivu, na yenye kusaidia, bila kujali mtu anaishi wapi au anazungumza lugha gani. Dhamira yetu ni rahisi — kuusogeza ulimwengu mbele kwa pamoja, kwa kutumia zana zinazotia nguvu jamii, kuwawezesha watu binafsi, na kufungua milango ya mustakabali salama na wenye uwezo zaidi.</p>
-
-  <p><strong>MACH Definition:</strong><br>
-  MACH = Mobile Advanced Capability Hub — jukwaa la rununu lenye moduli linalobeba uwezo wowote unaohitajika na taifa.</p>
+<!-- ZULU -->
+<div class="content" id="content-zulu">
+  <h2>Zulu</h2>
+  <p>[Your Zulu translation goes here]</p>
 </div>
-<br>
+
 <script>
 function showTab(lang) {
   const contents = document.querySelectorAll('.content');
@@ -314,7 +174,3 @@ function showTab(lang) {
 
   const selectedTab = document.getElementById('tab-' + lang);
   if (selectedTab) selectedTab.classList.add('active');
-}
-</script>
-</body>
-</html>
