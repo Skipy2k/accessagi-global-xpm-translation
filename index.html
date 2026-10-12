@@ -303,30 +303,18 @@ MACH = Mobile Advanced Capability Hub — a mobile, modular platform that carrie
 <br>
 <script>
 function showTab(lang) {
-  // Hide all content blocks
   const contents = document.querySelectorAll('.content');
-  contents.forEach(content => {
-    content.style.display = 'none';
-  });
+  contents.forEach(content => content.style.display = 'none');
 
-  // Remove active class from all tabs
   const tabs = document.querySelectorAll('.tab');
-  tabs.forEach(tab => {
-    tab.classList.remove('active');
-  });
+  tabs.forEach(tab => tab.classList.remove('active'));
 
-  // Show the selected content block
   const selectedContent = document.getElementById('content-' + lang);
-  if (selectedContent) {
-    selectedContent.style.display = 'block';
-  }
+  if (selectedContent) selectedContent.style.display = 'block';
 
-  // Highlight the active tab
   const selectedTab = document.getElementById('tab-' + lang);
-  if (selectedTab) {
-    selectedTab.classList.add('active');
-  }
+  if (selectedTab) selectedTab.classList.add('active');
 }
-</script>  
+</script>
 </body>
 </html>
