@@ -1,176 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>AccessAGI Global XPM Translation</title>
+  <meta charset="UTF-8">
+  <title>AccessAGI Global — XPM4 Translation Hub</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f9fc;
+      color: #222;
+    }
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-}
+    h1, h2, h3 {
+      margin-top: 0.6em;
+      margin-bottom: 0.4em;
+    }
 
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
+    p {
+      line-height: 1.5;
+      margin: 0.4em 0;
+    }
 
-.tab {
-  padding: 10px;
-  margin: 5px;
-  background-color: #eee;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-.tab.active {
-  background-color: #ccc;
-}
+    .bh-intro {
+      margin-bottom: 1.5em;
+    }
 
-.content {
-  display: none;
-  margin-top: 20px;
-}
-</style>
+    .language-buttons {
+      margin: 1.5em 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
 
+    .language-buttons button {
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid #2b6cb0;
+      background-color: #ffffff;
+      color: #2b6cb0;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .language-buttons button:hover {
+      background-color: #2b6cb0;
+      color: #ffffff;
+    }
+
+    .translation-block {
+      display: none;
+      margin-top: 1.5em;
+      padding-top: 0.5em;
+      border-top: 1px solid #d0d7e2;
+    }
+
+    .translation-block.active {
+      display: block;
+    }
+
+    .language-label {
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
 
-<h1>AccessAGI Global XPM Translation</h1>
+    <!-- BH intro -->
+    <div class="bh-intro">
+      <h1>Blue Heron</h1>
+      <p>
+        Blue Heron offers a simple greeting: believing that access to technology, shared worldwide,
+        can make life easier for all.
+      </p>
+    </div>
 
-<div class="tabs">
-  <div class="tab" id="tab-english" onclick="showTab('english')">English</div>
-  <div class="tab" id="tab-swahili" onclick="showTab('swahili')">Swahili</div>
-  <div class="tab" id="tab-french" onclick="showTab('french')">French</div>
-  <div class="tab" id="tab-spanish" onclick="showTab('spanish')">Spanish</div>
-  <div class="tab" id="tab-german" onclick="showTab('german')">German</div>
-  <div class="tab" id="tab-arabic" onclick="showTab('arabic')">Arabic</div>
-  <div class="tab" id="tab-hindi" onclick="showTab('hindi')">Hindi</div>
-  <div class="tab" id="tab-chinese" onclick="showTab('chinese')">Chinese</div>
-  <div class="tab" id="tab-japanese" onclick="showTab('japanese')">Japanese</div>
-  <div class="tab" id="tab-portuguese" onclick="showTab('portuguese')">Portuguese</div>
-  <div class="tab" id="tab-russian" onclick="showTab('russian')">Russian</div>
-  <div class="tab" id="tab-italian" onclick="showTab('italian')">Italian</div>
-  <div class="tab" id="tab-korean" onclick="showTab('korean')">Korean</div>
-  <div class="tab" id="tab-dutch" onclick="showTab('dutch')">Dutch</div>
-  <div class="tab" id="tab-somali" onclick="showTab('somali')">Somali</div>
-  <div class="tab" id="tab-yoruba" onclick="showTab('yoruba')">Yoruba</div>
-  <div class="tab" id="tab-zulu" onclick="showTab('zulu')">Zulu</div>
-</div>
+    <!-- English anchor (MACH / XPM4) -->
+    <div id="lang-en" class="translation-block active">
+      <div class="language-label">English</div>
 
-<!-- ENGLISH -->
-<div class="content" id="content-english">
-  <h2>English</h2>
-  <p>[Your English text goes here]</p>
-</div>
+      <h2>MACH — Mobile Advanced Capability Hub</h2>
+      <p>
+        The <strong>M</strong> is probably the most important. These units
+        <strong>will be designed to go almost anywhere</strong> — land, sea, air, remote regions,
+        disaster zones, industrial sites, or future off‑world locations. Each MACH will be built to
+        carry the exact tools, sensors, and intelligent systems needed for the mission,
+        integrated, calibrated, and fully tested, ready to operate the moment it arrives.
+      </p>
 
-<!-- SWAHILI -->
-<div class="content" id="content-swahili">
-  <h2>Swahili</h2>
-  <p>[Your Swahili translation goes here]</p>
-</div>
+      <h2>Why MACH matters now</h2>
+      <p>
+        We are entering a moment where coordination is becoming the limiting factor.
+        Not capability. Not compute. Not access. Coordination. MACH provides the missing layer —
+        the harmonization layer — that lets individuals, families, communities, businesses, and
+        nations move together without being overwhelmed.
+      </p>
 
-<!-- FRENCH -->
-<div class="content" id="content-french">
-  <h2>French</h2>
-  <p>[Your French translation goes here]</p>
-</div>
+      <h2>The XPM4 shift</h2>
+      <p>XPM4 introduced the next step: connection.</p>
+      <p>Not just information.</p>
+      <p>Not just translation.</p>
+      <p>Connection.</p>
+      <p>
+        A shared understanding across languages, cultures, and regions — without forcing uniformity.
+        MACH makes this possible. XPM4 accelerates it.
+      </p>
 
-<!-- SPANISH -->
-<div class="content" id="content-spanish">
-  <h2>Spanish</h2>
-  <p>[Your Spanish translation goes here]</p>
-</div>
+      <h2>Why this page exists</h2>
+      <p>
+        This translation hub is part of that shift.
+        A single place where the world can read the same message — clearly, respectfully,
+        and without distortion.
+      </p>
+      <p>One message.</p>
+      <p>Many languages.</p>
+      <p>Shared understanding.</p>
+      <p>Day by day, in every way, it’s getting better and better.</p>
+    </div>
 
-<!-- GERMAN -->
-<div class="content" id="content-german">
-  <h2>German</h2>
-  <p>[Your German translation goes here]</p>
-</div>
+    <!-- Language buttons -->
+    <div class="language-buttons">
+      <button data-lang="en">English</button>
+      <button data-lang="zh">Chinese</button>
+      <button data-lang="es">Spanish</button>
+      <button data-lang="ar">Arabic</button>
+      <button data-lang="hi">Hindi</button>
+      <button data-lang="fr">French</button>
+      <button data-lang="pt">Portuguese</button>
+      <button data-lang="ja">Japanese</button>
+      <button data-lang="ko">Korean</button>
+      <button data-lang="ru">Russian</button>
+      <button data-lang="tr">Turkish</button>
+      <button data-lang="vi">Vietnamese</button>
+      <button data-lang="id">Indonesian</button>
+      <button data-lang="th">Thai</button>
+      <button data-lang="uk">Ukrainian</button>
+      <button data-lang="pl">Polish</button>
+      <button data-lang="sw">Swahili</button>
+      <button data-lang="de">German</button>
+      <button data-lang="it">Italian</button>
+      <button data-lang="nl">Dutch</button>
+      <button data-lang="so">Somali</button>
+      <button data-lang="yo">Yoruba</button>
+      <button data-lang="zu">Zulu</button>
+      <button data-lang="fa">Persian</button>
+      <button data-lang="bn">Bengali</button>
+    </div>
 
-<!-- ARABIC -->
-<div class="content" id="content-arabic">
-  <h2>Arabic</h2>
-  <p>[Your Arabic translation goes here]</p>
-</div>
+    <!-- Translation blocks (same structure as English, different languages) -->
+    <!-- For now, these are placeholders; you can replace each with the translated text. -->
 
-<!-- HINDI -->
-<div class="content" id="content-hindi">
-  <h2>Hindi</h2>
-  <p>[Your Hindi translation goes here]</p>
-</div>
+    <div id="lang-zh" class="translation-block">
+      <div class="language-label">Chinese</div>
+      <p>[Chinese translation of the English section goes here.]</p>
+    </div>
 
-<!-- CHINESE -->
-<div class="content" id="content-chinese">
-  <h2>Chinese</h2>
-  <p>[Your Chinese translation goes here]</p>
-</div>
+    <div id="lang-es" class="translation-block">
+      <div class="language-label">Spanish</div>
+      <p>[Spanish translation of the English section goes here.]</p>
+    </div>
 
-<!-- JAPANESE -->
-<div class="content" id="content-japanese">
-  <h2>Japanese</h2>
-  <p>[Your Japanese translation goes here]</p>
-</div>
+    <div id="lang-ar" class="translation-block">
+      <div class="language-label">Arabic</div>
+      <p>[Arabic translation of the English section goes here.]</p>
+    </div>
 
-<!-- PORTUGUESE -->
-<div class="content" id="content-portuguese">
-  <h2>Portuguese</h2>
-  <p>[Your Portuguese translation goes here]</p>
-</div>
+    <div id="lang-hi" class="translation-block">
+      <div class="language-label">Hindi</div>
+      <p>[Hindi translation of the English section goes here.]</p>
+    </div>
 
-<!-- RUSSIAN -->
-<div class="content" id="content-russian">
-  <h2>Russian</h2>
-  <p>[Your Russian translation goes here]</p>
-</div>
+    <div id="lang-fr" class="translation-block">
+      <div class="language-label">French</div>
+      <p>[French translation of the English section goes here.]</p>
+    </div>
 
-<!-- ITALIAN -->
-<div class="content" id="content-italian">
-  <h2>Italian</h2>
-  <p>[Your Italian translation goes here]</p>
-</div>
+    <div id="lang-pt" class="translation-block">
+      <div class="language-label">Portuguese</div>
+      <p>[Portuguese translation of the English section goes here.]</p>
+    </div>
 
-<!-- KOREAN -->
-<div class="content" id="content-korean">
-  <h2>Korean</h2>
-  <p>[Your Korean translation goes here]</p>
-</div>
+    <div id="lang-ja" class="translation-block">
+      <div class="language-label">Japanese</div>
+      <p>[Japanese translation of the English section goes here.]</p>
+    </div>
 
-<!-- DUTCH -->
-<div class="content" id="content-dutch">
-  <h2>Dutch</h2>
-  <p>[Your Dutch translation goes here]</p>
-</div>
+    <div id="lang-ko" class="translation-block">
+      <div class="language-label">Korean</div>
+      <p>[Korean translation of the English section goes here.]</p>
+    </div>
 
-<!-- SOMALI -->
-<div class="content" id="content-somali">
-  <h2>Somali</h2>
-  <p>[Your Somali translation goes here]</p>
-</div>
+    <div id="lang-ru" class="translation-block">
+      <div class="language-label">Russian</div>
+      <p>[Russian translation of the English section goes here.]</p>
+    </div>
 
-<!-- YORUBA -->
-<div class="content" id="content-yoruba">
-  <h2>Yoruba</h2>
-  <p>[Your Yoruba translation goes here]</p>
-</div>
+    <div id="lang-tr" class="translation-block">
+      <div class="language-label">Turkish</div>
+      <p>[Turkish translation of the English section goes here.]</p>
+    </div>
 
-<!-- ZULU -->
-<div class="content" id="content-zulu">
-  <h2>Zulu</h2>
-  <p>[Your Zulu translation goes here]</p>
-</div>
+    <div id="lang-vi" class="translation-block">
+      <div class="language-label">Vietnamese</div>
+      <p>[Vietnamese translation of the English section goes here.]</p>
+    </div>
 
-<script>
-function showTab(lang) {
-  const contents = document.querySelectorAll('.content');
-  contents.forEach(content => content.style.display = 'none');
+    <div id="lang-id" class="translation-block">
+      <div class="language-label">Indonesian</div>
+      <p>[Indonesian translation of the English section goes here.]</p>
+    </div>
 
-  const tabs = document.querySelectorAll('.tab');
-  tabs.forEach(tab => tab.classList.remove('active'));
+    <div id="lang-th" class="translation-block">
+      <div class="language-label">Thai</div>
+      <p>[Thai translation of the English section goes here.]</p>
+    </div>
 
-  const selectedContent = document.getElementById('content-' + lang);
-  if (selectedContent) selectedContent.style.display = 'block';
+    <div id="lang-uk" class="translation-block">
+      <div class="language-label">Ukrainian</div>
+      <p>[Ukrainian translation of the English section goes here.]</p>
+    </div>
 
-  const selectedTab = document.getElementById('tab-' + lang);
-  if (selectedTab) selectedTab.classList.add('active');
+    <div id="lang-pl" class="translation-block">
+      <div class="language-label">Polish</div>
+      <p>[Polish translation of the English section goes here.]</p>
+    </div>
+
+    <div id="lang-sw" class="translation-block">
+      <div class="language-label">Swahili</div>
+      <p>[Swahili translation of the English section goes here.]</p>
+    </div>
+
+    <div id="lang-de" class="translation-block">
+      <div class="language-label">German</div>
+      <p>[German translation of the English section goes here.]</p>
+    </div>
+
+    <div id="lang-it" class="translation-block">
+      <div class="language-label">Italian</div>
+      <p>[Italian translation of the English section goes here.]</p>
+    </div>
+
+    <div id="lang-nl" class="translation-block">
+      <div class="language-label">Dutch</div>
+      <p>[Dutch translation of the English section goes here.]</p>
+    </div>
+
+    <div id="lang-so" class="translation-block">
+      <div class="language-label">Somali</div>
+      <p>[Somali translation of the English section goes here.]</p>
+    </div>
+
+    <div id="lang-yo" class="translation-block">
+      <div class="language-label">Yoruba</div>
+      <p>[Yoruba translation of the English section goes here.]</p>
+    </div>
+
+    <div id="lang-zu" class="translation-block">
+      <div class="language-label">Zulu</div>
+      <p>[Zulu translation of the English section goes here.]</p>
+    </div>
+
+    <div id="lang-fa" class="translation-block">
+      <div class="language-label">Persian</div>
+      <p>[Persian translation of the English section goes here.]</p>
+    </div>
+
+    <div id="lang-bn" class="translation-block">
+      <div class="language-label">Bengali</div>
+      <p>[Bengali translation of the English section goes here.]</p>
+    </div>
+
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.language-buttons button');
+    const blocks = document.querySelectorAll('.translation-block');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const lang = button.getAttribute('data-lang');
+
+        blocks.forEach(block => {
+          block.classList.remove('active');
+        });
+
+        const target = document.getElementById('lang-' + lang);
+        if (target) {
+          target.classList.add('active');
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
